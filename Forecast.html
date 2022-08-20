@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d5e243e050ca43d6b9cd9af9976af22b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d5e243e050ca43d6b9cd9af9976af22b" ></div>
+        
+</body>
+<script>    
+    
+            var map_d5e243e050ca43d6b9cd9af9976af22b = L.map(
+                "map_d5e243e050ca43d6b9cd9af9976af22b",
+                {
+                    center: [13.563881163839747, 87.844077479023],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dd353c7198ff49779be009fd686c5851 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d5e243e050ca43d6b9cd9af9976af22b);
+        
+    
+            var marker_23a04fd120b641e4835068c2dcd858e5 = L.marker(
+                [23.360189036757664, 78.86278768269393],
+                {}
+            ).addTo(map_d5e243e050ca43d6b9cd9af9976af22b);
+        
+    
+            var icon_c30d388e2e464f5fa9b91fb4c36cd489 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23a04fd120b641e4835068c2dcd858e5.setIcon(icon_c30d388e2e464f5fa9b91fb4c36cd489);
+        
+    
+        var popup_ae83a4eb39f04158836058c43d8e1a5e = L.popup({"maxWidth": 650});
+
+        
+            var i_frame_9928aa2aebcb402791abf40824b67ef6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vMjY1OTIzMTUvMTg1NzI5MDk4LWJkNGZkNGYyLTE3NzEtNGMwOS05NDYxLWYyMDg0YmJhYTY1Mi5wbmciIHdpZHRoPTI4MCBoZWlnaHQ9MjUwPg==" width="300" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_ae83a4eb39f04158836058c43d8e1a5e.setContent(i_frame_9928aa2aebcb402791abf40824b67ef6);
+        
+
+        marker_23a04fd120b641e4835068c2dcd858e5.bindPopup(popup_ae83a4eb39f04158836058c43d8e1a5e)
+        ;
+
+        
+    
+    
+            marker_23a04fd120b641e4835068c2dcd858e5.bindTooltip(
+                `<div>
+                     인도 금융시장 예보
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d49b4caef5d74fcabb2376f32fda1258 = L.marker(
+                [12.822905283376853, 104.93335168593507],
+                {}
+            ).addTo(map_d5e243e050ca43d6b9cd9af9976af22b);
+        
+    
+            var icon_9efe17cc576842da9ea0736792c5ab0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d49b4caef5d74fcabb2376f32fda1258.setIcon(icon_9efe17cc576842da9ea0736792c5ab0d);
+        
+    
+        var popup_bf8d71ec3add4d65804334ce8a8d5275 = L.popup({"maxWidth": 650});
+
+        
+            var i_frame_0964f30eb127477eaa5ebb60726d0c83 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vMjY1OTIzMTUvMTg1NzMwNjg5LWM0MzhmYjMyLTY1MWEtNGRkYi1iNzAyLWZhYTQ1NThlY2FmZi5wbmciIHdpZHRoPTI4MCBoZWlnaHQ9MjUwPg==" width="300" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_bf8d71ec3add4d65804334ce8a8d5275.setContent(i_frame_0964f30eb127477eaa5ebb60726d0c83);
+        
+
+        marker_d49b4caef5d74fcabb2376f32fda1258.bindPopup(popup_bf8d71ec3add4d65804334ce8a8d5275)
+        ;
+
+        
+    
+    
+            marker_d49b4caef5d74fcabb2376f32fda1258.bindTooltip(
+                `<div>
+                     캄보디아 금융시장 예보
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e22a5afbd9254851a35ffbe80d72aea3 = L.marker(
+                [14.674179360797188, 108.34095191854652],
+                {}
+            ).addTo(map_d5e243e050ca43d6b9cd9af9976af22b);
+        
+    
+            var icon_e9b06027f4ae4764a96d055063a37f83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e22a5afbd9254851a35ffbe80d72aea3.setIcon(icon_e9b06027f4ae4764a96d055063a37f83);
+        
+    
+        var popup_26308e7825ad418e8116897484ff2c70 = L.popup({"maxWidth": 650});
+
+        
+            var i_frame_e3d65250d3ea4fa19b885a3d9093b04b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vMjY1OTIzMTUvMTg1NzMwNjk5LTYxYzZlZGI3LWUzMjctNDg2ZC04NjRiLWJjODVkNTllNTEwYy5wbmciIHdpZHRoPTI4MCBoZWlnaHQ9MjUwPg==" width="300" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_26308e7825ad418e8116897484ff2c70.setContent(i_frame_e3d65250d3ea4fa19b885a3d9093b04b);
+        
+
+        marker_e22a5afbd9254851a35ffbe80d72aea3.bindPopup(popup_26308e7825ad418e8116897484ff2c70)
+        ;
+
+        
+    
+    
+            marker_e22a5afbd9254851a35ffbe80d72aea3.bindTooltip(
+                `<div>
+                     베트남 금융시장 예보
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
